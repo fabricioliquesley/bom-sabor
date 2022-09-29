@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+:root {
+    --cor01: #181615;
+    --cor02: #fffaf2;
+    --cor03: #ff8400;
+    --cor04: #3b3b3b;
+    --cor05: #b15b00;
+    --cor06: #071013;
+    --cor-redes: black;
+    --cor-nav: #fff;
+
+    --fonte-padrao: 'Josefin Sans', sans-serif;
+    --font-titulo: 'Berkshire Swash', cursive;
+    --font-subtitulo: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* background: url('images/folha-fundo-02.jpg');
+    background-attachment: fixed; */
+}
+
+header {
+    background: var(--cor03);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+header > img {
+    width: 200px;
+    margin-left: 21%;
+}
+
+header .redes {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 21%;
+}
+
+header .redes li {
+    padding: 5px;
+}
+
+header .redes li i {
+    color: var(--cor-redes);
+    font-size: 30px;
+}
+
+header .redes li i:hover {
+    color: var(--cor02);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor-nav);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    height: 40px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 25px;
+}
+
+nav a > p:hover {
+    color: var(--cor03);
+}
+
+nav .active {
+    color: var(--cor03);
+}
+
+main .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/fundo-cardapio.jpg');
+    background-size: cover;
+    height: 50vh;
+    padding: 20px;
+}
+
+main .titulo h1 {
+    font-family: var(--font-titulo);
+    color: white;
+    font-size: 3.5em;
+}
+
+main .titulo h2 {
+    font-family: var(--font-subtitulo);
+    color: var(--cor03);
+    font-size: 4em;
+}
+
+main .conteudo {
+    width: 700px;
+    margin: auto;
+}
+
+main .conteudo .nome-form {
+    text-align: center;
+}
+
+main .conteudo .nome-form > h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor04);
+    font-size: 3em;
+    margin-top: 70px;
+}
+
+main .conteudo .nome-form > p {
+    font-family: var(--fonte-padrao);
+    margin-top: 35px;
+}
+
+main .conteudo .form {
+    font-family: var(--fonte-padrao);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .conteudo .form span {
+    margin: 5px 0;
+    font-weight: bolder;
+    width: 50%;
+}
+
+main .conteudo .form input {
+    height: 35px;
+    margin-bottom: 15px;
+    width: 688px;
+    border: 1px solid gray;
+    outline: none;
+    padding: 0 5px;
+    font-size: 1.2em;
+}
+
+main .conteudo .form .msg {
+    height: 130px;
+}
+
+main .conteudo .permisao {
+    display: flex;
+    align-items: center;
+}
+
+main .conteudo .permisao .check {
+    margin: 0 0 5px;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+main .conteudo .permisao .novidades {
+    font-weight: normal;
+    margin: 0 5px;
+}
+
+main .conteudo .form .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--fonte-padrao);
+    background: var(--cor03);
+    border-radius: 100px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: 40px auto;
+}
+
+main .conteudo .form .btn:hover {
+    background: var(--cor06);
+    color: white;
+}
+
+footer {
+    background: url('../images/fundo02.jpg');
+    text-align: center;
+    height: 760px;
+}
+
+footer i {
+    color: #ff8400;
+    font-size: 100px;
+    margin-top: 180px;
+}
+
+footer h2 {
+    font-family: var(--font-titulo);
+    color: var(--cor-nav);
+    font-size: 2.4em;
+    margin-top: 50px;
+}
+
+footer p {
+    font-family: var(--fonte-padrao);
+    font-size: 6.2em;
+    font-weight: 900;
+    margin-top: 20px;
+    color: white;
+}
+
+footer div {
+    margin-top: 260px;
+    height: 35px;
+    background: var(--cor01);
+    padding-top: 20px;
+    border-top: 2px solid white;
+}
+
+footer div > p {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media screen and (max-width: 430px) {
+    header > img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    header .redes {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        background: var(--cor-nav);
+        font-family: var(--fonte-padrao);
+        text-align: center;
+        height: 150px;
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: black;
+        padding: 5px 0;
+    }
+
+    main .titulo {
+        text-align: center;
+        height: 40vh;
+    }
+    
+    main .titulo h1 {
+        font-size: 2.5em;
+    }
+    
+    main .titulo h2 {
+        font-size: 3.6em;
+    }
+
+    main .conteudo .nome-form {
+        text-align: center;
+        padding: 30px;
+    }
+
+    main .conteudo .nome-form > h1 {
+        font-size: 2em;
+    }
+    
+    main .conteudo .nome-form > p {
+        font-size: 1em;
+    }
+
+    main .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+    main .conteudo .form {
+        font-family: var(--fonte-padrao);
+        display: flex;
+    }
+    
+    main .conteudo .form span {
+        margin: 5px 0;
+    }
+    
+    main .conteudo .form input {
+        height: 35px;
+        margin-bottom: 15px;
+        width: 310px;
+        border: 1px solid gray;
+        outline: none;
+        padding: 0 5px;
+        font-size: 1.2em;
+    }
+    
+    main .conteudo .form .msg {
+        height: 130px;
+    }
+    
+    main .conteudo .permisao .check {
+        margin: 0 0 3px 0;
+        width: 15px;
+    }
+    
+    main .conteudo .permisao .novidades {
+        font-size: 0.9em;
+        width: 300px;
+    }
+
+    main .conteudo .form .btn {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        margin: 40px auto 50px auto;
+    }
+
+    footer {
+        height: 100%;
+        background-size: cover;
+    }
+    
+    footer i {
+        font-size: 70px;
+        margin-top: 90px;
+    }
+    
+    footer h2 {
+        font-size: 1.5em;
+        margin-top: 40px;
+    }
+    
+    footer p {
+        font-size: 3.7em;
+        margin-top: 20px;
+    }
+    
+    footer div {
+        margin-top: 60px;
+    }
+    
+    footer div > p {
+        font-size: 0.8em;
+    }
+}

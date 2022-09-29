@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+:root {
+    --cor01: #181615;
+    --cor02: #fffaf2;
+    --cor03: #ff8400;
+    --cor04: #3b3b3b;
+    --cor05: #b15b00;
+    --cor06: #071013;
+    --cor07: #f1f1f1;
+    --cor-redes: black;
+    --cor-nav: #fff;
+
+    --fonte-padrao: 'Josefin Sans', sans-serif;
+    --font-titulo: 'Berkshire Swash', cursive;
+    --font-subtitulo: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* background: url('images/folha-fundo-02.jpg');
+    background-attachment: fixed; */
+}
+
+header {
+    background: var(--cor03);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+header > img {
+    width: 200px;
+    margin-left: 21%;
+}
+
+header .redes {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 21%;
+}
+
+header .redes li {
+    padding: 5px;
+}
+
+header .redes li i {
+    color: var(--cor-redes);
+    font-size: 30px;
+}
+
+header .redes li i:hover {
+    color: var(--cor02);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor-nav);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    height: 40px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 25px;
+}
+
+nav a > p:hover {
+    color: var(--cor03);
+}
+
+nav .active {
+    color: var(--cor03);
+}
+
+main {
+    min-height: 100vh;
+    background: var(--cor07);
+    padding: 50px;
+}
+
+main .conteudo {
+    background: white;
+    width: 65%;
+    min-height: 100vh;
+    padding: 40px;
+    margin: auto;
+}
+
+main .conteudo > h1 {
+    font-family: var(--font-titulo);
+    color: var(black);
+    background: var(--cor06);
+    font-size: 3.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+main .conteudo .nt1 {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0 50px 0;
+    border-bottom: 1px solid black;
+}
+
+main .conteudo .nt1 i {
+    margin-top: 20px;
+    font-size: 80px;
+    color: #ffbb00;
+}
+
+main .conteudo .nt1 .info {
+    font-family: var(--fonte-padrao);
+    color: var(black);
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+main .conteudo h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor05);
+    font-size: 2em;
+    margin-top: 50px;
+    text-align: center;
+}
+
+main .conteudo h2 {
+    font-family: var(--font-subtitulo);
+    color: var(--cor04);
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+main .conteudo .nt2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+main .conteudo .nt2 > img {
+    width: 500px;
+    margin-top: 30px;
+}
+
+main .conteudo .nt2 p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    margin-top: 30px;
+    width: 500px;
+    text-align: justify;
+}
+
+main .conteudo .nt3 {
+    margin-top: 50px;
+    padding: 0 40px 50px;
+    text-align: center;
+}
+
+main .conteudo .nt3 p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+main .conteudo .nt3 ul {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    list-style: inside;
+    margin-top: 30px;
+}
+
+main .conteudo .nt3 li {
+    margin: 10px 30px;
+}
+
+main .conteudo .nt3 a {
+    color: var(--cor06);
+    text-align: center;
+}
+
+main .conteudo .nt3 a:hover {
+    color: var(--cor03);
+}
+
+footer {
+    background: url('../images/fundo02.jpg');
+    text-align: center;
+    height: 760px;
+}
+
+footer i {
+    color: #ff8400;
+    font-size: 100px;
+    margin-top: 180px;
+}
+
+footer h2 {
+    font-family: var(--font-titulo);
+    color: var(--cor-nav);
+    font-size: 2.4em;
+    margin-top: 50px;
+}
+
+footer p {
+    font-family: var(--fonte-padrao);
+    font-size: 6.2em;
+    font-weight: 900;
+    margin-top: 20px;
+    color: white;
+}
+
+footer div {
+    margin-top: 260px;
+    height: 35px;
+    background: var(--cor01);
+    padding-top: 20px;
+    border-top: 2px solid white;
+}
+
+footer div > p {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media screen and (max-width: 430px) {
+    header > img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    header .redes {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        background: var(--cor-nav);
+        font-family: var(--fonte-padrao);
+        text-align: center;
+        height: 150px;
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: black;
+        padding: 5px 0;
+    }
+
+    main {
+        padding: 0;
+    }
+    
+    main .conteudo {
+        width: 100%;
+        padding: 0;
+        border-top: 1px solid black;
+    }
+
+    main .conteudo > h1 {
+        width: 250px;
+        margin: 30px auto;
+    }
+
+    main .conteudo .nt1 {
+        padding: 20px 10px 50px;
+    }
+
+    main .conteudo .nt2 {
+        padding: 0 20px 50px;
+    }
+    
+    main .conteudo .nt2 > img {
+        width: 100%;
+    }
+
+    main .conteudo .nt2 p {
+        width: 100%;
+    }
+    
+    main .conteudo .nt3 {
+        margin-top: 100px;
+        padding: 0px 20px 50px;
+    }
+    
+    main .conteudo .nt3 p{
+        font-family: var(--fonte-padrao);
+        font-size: 1em;
+        margin-top: 30px;
+        text-align: justify;
+    }
+    
+    main .conteudo .nt3 ul {
+        font-family: var(--fonte-padrao);
+        text-align: justify;
+        list-style: inside;
+        margin-top: 30px;
+    }
+    
+    main .conteudo .nt3 li {
+        margin: 10px 30px;
+    }
+
+    footer {
+        height: 100%;
+        background-size: cover;
+    }
+    
+    footer i {
+        font-size: 70px;
+        margin-top: 90px;
+    }
+    
+    footer h2 {
+        font-size: 1.5em;
+        margin-top: 40px;
+    }
+    
+    footer p {
+        font-size: 3.7em;
+        margin-top: 20px;
+    }
+    
+    footer div {
+        margin-top: 60px;
+    }
+    
+    footer div > p {
+        font-size: 0.8em;
+    }
+}

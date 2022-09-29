@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+:root {
+    --cor01: #181615;
+    --cor02: #fffaf2;
+    --cor03: #ff8400;
+    --cor04: #3b3b3b;
+    --cor05: #b15b00;
+    --cor06: #071013;
+    --cor-redes: black;
+    --cor-nav: #fff;
+
+    --fonte-padrao: 'Josefin Sans', sans-serif;
+    --font-titulo: 'Berkshire Swash', cursive;
+    --font-subtitulo: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--cor02);
+}
+
+header {
+    background: var(--cor03);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+header > img {
+    width: 200px;
+    margin-left: 21%;
+}
+
+header .redes {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 21%;
+}
+
+header .redes li {
+    padding: 5px;
+}
+
+header .redes li i {
+    color: var(--cor-redes);
+    font-size: 30px;
+}
+
+header .redes li i:hover {
+    color: var(--cor02);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor-nav);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    height: 40px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 25px;
+}
+
+nav a > p:hover {
+    color: var(--cor03);
+}
+
+nav .active {
+    color: var(--cor03);
+}
+
+main .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/fundo-cardapio.jpg');
+    background-size: cover;
+    height: 50vh;
+    margin: 0 auto 180px auto;
+}
+
+main .titulo h1 {
+    font-family: var(--font-titulo);
+    color: white;
+    font-size: 6em;
+}
+
+main .massa, .pratos, .cafe-manha, .pizza, .burg, .bebidas {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+main .conteudo {
+    padding: 50px 60px;
+}
+
+main .conteudo h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor05);
+    font-size: 3em;
+}
+
+main .conteudo h2 {
+    font-family: var(--font-subtitulo);
+    color: var(--cor04);
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+main .conteudo p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+main .conteudo span {
+    font-family: var(--font-titulo);
+    color: var(--cor05);
+    font-size: 1.5em;
+}
+
+main .bg-imagem-massa, .bg-imagem-prato, .bg-imagem-pizza, .bg-imagem-burg, .bg-imagem-cafe, .bg-imagem-bebida {
+    display: flex;
+    justify-content: center;
+}
+
+main .bg-imagem-massa > img, .bg-imagem-prato > img, .bg-imagem-pizza > img, .bg-imagem-burg > img, .bg-imagem-cafe > img, .bg-imagem-bebida > img {
+    margin: auto;
+    width: 90%;
+}
+
+footer {
+    background: url('../images/fundo02.jpg');
+    text-align: center;
+    height: 760px;
+    margin-top: 150px;
+}
+
+footer i {
+    color: #ff8400;
+    font-size: 100px;
+    margin-top: 180px;
+}
+
+footer h2 {
+    font-family: var(--font-titulo);
+    color: var(--cor-nav);
+    font-size: 2.4em;
+    margin-top: 50px;
+}
+
+footer p {
+    font-family: var(--fonte-padrao);
+    font-size: 6.2em;
+    font-weight: 900;
+    margin-top: 20px;
+    color: white;
+}
+
+footer div {
+    margin-top: 260px;
+    height: 35px;
+    background: var(--cor01);
+    padding-top: 20px;
+    border-top: 2px solid white;
+}
+
+footer div > p {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media screen and (max-width: 430px) {
+    header > img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    header .redes {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        background: var(--cor-nav);
+        font-family: var(--fonte-padrao);
+        text-align: center;
+        height: 150px;
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: black;
+        padding: 5px 0;
+    }
+
+    main .titulo {
+        height: 40vh;
+        margin: 0 auto 70px auto;
+    }
+    
+    main .titulo h1 {
+        font-size: 4em;
+    }
+
+    main .massa, .pratos, .cafe-manha, .pizza, .burg, .bebidas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        margin-top: 0px;
+    }
+
+    main .bg-imagem-massa > img, .bg-imagem-prato > img, .bg-imagem-pizza > img, .bg-imagem-burg > img, .bg-imagem-cafe > img, .bg-imagem-bebida > img {
+        display: none;
+    }
+
+    main .conteudo {
+        padding: 10px 10px;
+    }
+    
+    main .conteudo h1 {
+        font-size: 3em;
+    }
+    
+    main .conteudo h2 {
+        font-size: 1.3em;
+    }
+    
+    main .conteudo p {
+        font-size: 1em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    main .conteudo span {
+        font-size: 1.5em;
+    }
+
+    footer {
+        height: 100%;
+        background-size: cover;
+    }
+    
+    footer i {
+        font-size: 70px;
+        margin-top: 90px;
+    }
+    
+    footer h2 {
+        font-size: 1.5em;
+        margin-top: 40px;
+    }
+    
+    footer p {
+        font-size: 3.7em;
+        margin-top: 20px;
+    }
+    
+    footer div {
+        margin-top: 60px;
+    }
+    
+    footer div > p {
+        font-size: 0.8em;
+    }
+}

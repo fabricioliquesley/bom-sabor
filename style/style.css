@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+:root {
+    --cor01: #181615;
+    --cor02: #fffaf2;
+    --cor03: #ff8400;
+    --cor04: #3b3b3b;
+    --cor05: #b15b00;
+    --cor06: #071013;
+    --cor-redes: black;
+    --cor-nav: #fff;
+
+    --fonte-padrao: 'Josefin Sans', sans-serif;
+    --font-titulo: 'Berkshire Swash', cursive;
+    --font-subtitulo: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    /* background: url('images/folha-fundo-02.jpg');
+    background-attachment: fixed; */
+}
+
+header {
+    background: var(--cor03);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+header > img {
+    width: 200px;
+    margin-left: 21%;
+}
+
+header .redes {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 21%;
+}
+
+header .redes li {
+    padding: 5px;
+}
+
+header .redes li i {
+    color: var(--cor-redes);
+    font-size: 30px;
+}
+
+header .redes li i:hover {
+    color: var(--cor02);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor-nav);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    height: 40px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 25px;
+}
+
+nav a > p:hover {
+    color: var(--cor03);
+}
+
+nav .active {
+    color: var(--cor03);
+}
+
+main {
+    background: white;
+    /* padding: 0px 350px; */
+}
+
+main .titulo {
+    background: url('../images/fundo01.jpg');
+    background-size: cover;
+    height: 100vh;
+    /* margin: 0px -350px; */
+}
+
+main .titulo > h1 {
+    font-family: var(--font-titulo);
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    padding-top: 350px;
+}
+
+main .titulo > h2 {
+    font-family: var(--font-subtitulo);
+    color: var(--cor03);
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+main .divisao {
+    background: white;
+    height: 30px;
+    /* margin: 0px -350px; */
+}
+
+main .apresentacao {
+    display: flex;
+    justify-content: center;
+    height: 670px;
+    padding: 20px;
+    margin: auto;
+}
+
+main .apresentacao .conteudo {
+    margin-top: 50px;
+    width: 600px;
+    padding: 20px;
+}
+
+main .apresentacao .conteudo span {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+}
+
+main .apresentacao .conteudo h1 {
+    color: var(--cor05);
+    font-family: var(--font-titulo);
+    font-size: 5em;
+    margin-top: 20px;
+}
+
+main .apresentacao .conteudo h2 {
+    color: var(--cor04);
+    font-family: var(--font-subtitulo);
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+main .apresentacao .conteudo .info {
+    font-family: var(--fonte-padrao);
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+main .apresentacao .conteudo a {
+    text-decoration: none;
+}
+
+main .apresentacao .conteudo .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    background: var(--cor06);
+    color: white;
+    height: 50px;
+    width: 200px;
+    margin-top: 40px;
+    border-radius: 25px;
+}
+
+main .apresentacao .conteudo .btn:hover {
+    background: var(--cor03);
+}
+
+main .apresentacao .horario {
+    background: url('../images/restaurante02.jpg');
+    width: 400px;
+    margin-top: 50px;
+}
+
+main .apresentacao .horario h1 {
+    color: white;
+    font-family: var(--font-titulo);
+    font-size: 3em;
+    text-align: center;
+    margin-top: 125%;
+}
+
+main .apresentacao .horario p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main .cardapio {
+    background: var(--cor02);
+    height: 900px;
+    padding: 20px;
+}
+
+main .cardapio h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor05);
+    text-align: center;
+    font-size: 3em;
+    margin-top: 140px;
+}
+
+main .cardapio h2 {
+    font-family: var(--font-subtitulo);
+    color: var(--cor04);
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+main .cardapio ul {
+    margin-top: 100px;
+    columns: 2;
+    list-style: none;
+}
+
+main .cardapio ul li {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main .cardapio ul li > img {
+    width: 150px;
+    height: 150px;
+}
+
+main .cardapio ul li span {
+    padding: 0 20px;
+}
+
+main .cardapio span > h2 {
+    text-align: left;
+    margin: 0;
+}
+
+main .cardapio span > p {
+    margin-top: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+main .cardapio span > h1 {
+    font-family: var(--font-subtitulo);
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: left;
+}
+
+main .cardapio a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+main .cardapio .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    background: var(--cor03);
+    color: white;
+    height: 50px;
+    width: 300px;
+    margin-top: 40px;
+    border-radius: 25px;
+}
+
+main .cardapio .btn:hover {
+    background: var(--cor05);
+}
+
+main .eventos {
+    background: white;
+    display: flex;
+    justify-content: center;
+    height: 670px;
+    padding: 20px;
+    margin: auto;
+}
+
+main .eventos .imagem-evento {
+    background: url('../images/rodizio.png');
+    background-size: cover;
+    width: 400px;
+    margin-top: 50px;
+}
+
+main .eventos .conteudo {
+    margin-top: 70px;
+    width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+main .eventos .conteudo i {
+    margin-top: 20px;
+    font-size: 80px;
+    color: #ffbb00;
+}
+
+main .eventos .conteudo .info {
+    font-family: var(--fonte-padrao);
+    color: var(black);
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+main .eventos .conteudo h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor05);
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+main .eventos .conteudo h2 {
+    font-family: var(--font-subtitulo);
+    color: var(--cor04);
+    font-size: 1.9em;
+    margin-top: 20px;
+}
+
+main .eventos .conteudo a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+main .eventos .conteudo .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    background: var(--cor03);
+    color: white;
+    height: 50px;
+    width: 300px;
+    margin-top: 60px;
+    border-radius: 25px;
+}
+
+main .eventos .conteudo .btn:hover {
+    background: var(--cor05);
+}
+
+main .depoimentos {
+    background: var(--cor02);
+    text-align: center;
+    height: 600px;
+    padding: 20px;
+}
+
+main .depoimentos h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor05);
+    font-size: 3em;
+    margin-top: 60px;
+}
+
+main .depoimentos .avaliacoes {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+main .depoimentos .avaliacoes .dp1 > img, .dp2 > img {
+    border-radius: 100px;
+    width: 150px;
+}
+
+main .depoimentos .avaliacoes .dp1 > p, .dp2 > p {
+    font-family: var(--fonte-padrao);
+    margin-top: 30px;
+    font-size: 1.3em;
+    width: 400px;
+    padding: 20px;
+}
+
+main .depoimentos .avaliacoes .dp1 > h2, .dp2 > h2 {
+    font-family: var(--font-subtitulo);
+    color: var(--cor04);
+    margin-top: 20px;
+    font-size: 1.7em;
+}
+
+footer {
+    background: url('../images/fundo02.jpg');
+    text-align: center;
+    height: 760px;
+}
+
+footer i {
+    color: #ff8400;
+    font-size: 100px;
+    margin-top: 180px;
+}
+
+footer h2 {
+    font-family: var(--font-titulo);
+    color: var(--cor-nav);
+    font-size: 2.4em;
+    margin-top: 50px;
+}
+
+footer p {
+    font-family: var(--fonte-padrao);
+    font-size: 6.2em;
+    font-weight: 900;
+    margin-top: 20px;
+    color: white;
+}
+
+footer div {
+    margin-top: 260px;
+    height: 35px;
+    background: var(--cor01);
+    padding-top: 20px;
+    border-top: 2px solid white;
+}
+
+footer div > p {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media screen and (max-width: 430px) {
+    header > img {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    header .redes {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        background: var(--cor-nav);
+        font-family: var(--fonte-padrao);
+        text-align: center;
+        height: 150px;
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: black;
+        padding: 5px 0;
+    }
+
+    main .titulo {
+        height: 70vh;
+    }
+
+    main .titulo > h1 {
+        font-family: var(--font-titulo);
+        color: white;
+        text-align: center;
+        font-size: 3.5em;
+        padding-top: 150px;
+    }
+
+    main .titulo > h2 {
+        font-family: var(--font-subtitulo);
+        color: var(--cor03);
+        text-align: center;
+        font-size: 2em;
+        font-weight: 500;
+        margin-top: 40px;
+    }
+
+    main .apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 20px;
+    }
+
+    main .apresentacao .conteudo {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    main .apresentacao .conteudo span {
+        font-size: 1.2em;
+    }
+    
+    main .apresentacao .conteudo h1 {
+        font-size: 3.5em;
+    }
+    
+    main .apresentacao .conteudo h2 {
+        font-size: 1.8em;
+    }
+    
+    main .apresentacao .conteudo a {
+        text-decoration: none;
+    }
+    
+    main .apresentacao .conteudo .btn {
+        margin: 40px auto;
+    }
+    
+    main .apresentacao .horario {
+        width: 320px;
+    }
+    
+    main .apresentacao .horario p {
+        margin: 20px;
+    }
+
+    main .cardapio {
+        height: 100%;
+    }
+    
+    main .cardapio h1 {
+        font-size: 2.5em;
+        margin-top: 100px;
+    }
+    
+    main .cardapio h2 {
+        font-size: 1.3em;
+    }
+    
+    main .cardapio ul {
+        margin-top: 60px;
+        columns: 1;
+    }
+    
+    main .cardapio ul li {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 40px 20px;
+    }
+    
+    main .cardapio span > h1 {
+        font-size: 1.5em;
+        margin: 20px 0 0 0;
+    }
+
+    main .eventos {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 20px;
+        margin: auto;
+    }
+    
+    main .eventos .imagem-evento {
+        display: none;
+    }
+    
+    main .eventos .conteudo {
+        width: 100%;
+        padding: 0px;
+    }
+    
+    main .eventos .conteudo h1 {
+        font-size: 2.5em;
+    }
+    
+    main .eventos .conteudo h2 {
+        font-size: 1.4em;
+    }
+    
+    main .eventos .conteudo a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    main .depoimentos {
+        height: 100%;
+    }
+    
+    main .depoimentos h1 {
+        font-size: 2.5em;
+    }
+    
+    main .depoimentos .avaliacoes {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    main .depoimentos .avaliacoes .dp1 > img, .dp2 > img {
+        border-radius: 100px;
+        width: 150px;
+        margin-top: 40px;
+    }
+    
+    main .depoimentos .avaliacoes .dp1 > p, .dp2 > p {
+        font-family: var(--fonte-padrao);
+        margin: 30px auto;
+        font-size: 1.2em;
+        width: 300px;
+        padding: 0px;
+    }
+
+    footer {
+        height: 100%;
+        background-size: cover;
+    }
+    
+    footer i {
+        font-size: 70px;
+        margin-top: 90px;
+    }
+    
+    footer h2 {
+        font-size: 1.5em;
+        margin-top: 40px;
+    }
+    
+    footer p {
+        font-size: 3.7em;
+        margin-top: 20px;
+    }
+    
+    footer div {
+        margin-top: 60px;
+    }
+    
+    footer div > p {
+        font-size: 0.8em;
+    }
+}
