@@ -190,7 +190,7 @@ main .apresentacao .conteudo .btn:hover {
 main .apresentacao .horario {
     background: url('../images/restaurante02.jpg');
     width: 400px;
-    margin-top: 50px;
+    margin: 50px auto 0;
 }
 
 main .apresentacao .horario h1 {
