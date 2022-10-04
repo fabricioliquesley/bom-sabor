@@ -449,6 +449,37 @@ footer div > p {
     margin: 0;
 }
 
+@media screen and (max-width: 770px){
+    main .cardapio ul li {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 40px 20px;
+    }
+
+    main .cardapio ul li p {
+        font-size: 0.9em;
+    }
+
+    main .depoimentos .avaliacoes {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    main .depoimentos .avaliacoes .dp1 > img, .dp2 > img {
+        border-radius: 100px;
+        width: 150px;
+        margin-top: 40px;
+    }
+    
+    main .depoimentos .avaliacoes .dp1 > p, .dp2 > p {
+        font-family: var(--fonte-padrao);
+        margin: 30px auto;
+        font-size: 1.2em;
+        width: 300px;
+        padding: 0px;
+    }
+}
+
 @media screen and (max-width: 430px) {
     header > img {
         width: 150px;
