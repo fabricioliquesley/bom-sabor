@@ -190,7 +190,8 @@ main .apresentacao .conteudo .btn:hover {
 main .apresentacao .horario {
     background: url('../images/restaurante02.jpg');
     width: 400px;
-    margin: 50px auto 0;
+    height: 620px;
+    margin: 0 50px;
 }
 
 main .apresentacao .horario h1 {
@@ -450,6 +451,10 @@ footer div > p {
 }
 
 @media screen and (max-width: 770px){
+    main .apresentacao .horario {
+        margin: 50px auto 0;
+    }
+
     main .cardapio ul li {
         display: flex;
         justify-content: center;
@@ -565,6 +570,7 @@ footer div > p {
     
     main .apresentacao .horario {
         width: 320px;
+        margin: 50px auto 0;
     }
     
     main .apresentacao .horario p {
